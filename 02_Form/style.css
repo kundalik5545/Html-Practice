@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #273f43;
+  /* background: #000; */
+  color: whitesmoke;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 10px;
+  padding: 10px;
+}
+fieldset {
+  margin: 10px;
+  padding: 20px;
+}
+
+legend {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label,
+input {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+}
+
+button {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
+  background-color: lightblue;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #273f43;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #273f43;
+}
+
+tr:hover {
+  background-color: #273f43;
+}
+
+table caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #273f43;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+}
+
+/* drop down css  */
+
+select,
+option {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  margin: 5px;
+}
+
+hr {
+  color: red;
+  background-color: blue;
+}

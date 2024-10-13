@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form</h1>
+
+    <div class="formContainer">
+        <form class="contactForm">
+            <fieldset>
+                <legend>Personal information:</legend>
+
+                <fieldset>
+                    <legend>Basic details:</legend>
+                    <!-- input type text  -->
+                    <label for="fname">Enter Name:</label>
+                    <input type="text" name="fname" id="fname"><br><br>
+
+                    <!-- input type email  -->
+                    <label for="email">Enter email:</label>
+                    <input type="email" name="email" id="email"><br><br>
+
+                    <!-- input type tel  -->
+                    <label for="phone">Enter Phone:</label>
+                    <input type="tel" name="phone" id="phone"> <br><br>
+
+                    <!-- input type number  -->
+                    <label for="number">Enter Number:</label>
+                    <input type="number" name="number" id="number"> <br> <br>
+
+                    <!-- input type password  -->
+                    <label for="password">Enter your password:</label>
+                    <input type="password" name="password" id="password"><br>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Input type date:</legend>
+                    <label for="date">Enter Date:</label>
+                    <input type="date" name="date" id="date"><br><br>
+
+                    <!-- input type datetime  -->
+                    <label for="datetime">Enter date time:</label>
+                    <input type="datetime" name="datetime" id="datetime"><br><br>
+
+                    <!-- input type date time local  -->
+                    <label for="datetimelocal">Enter date time local:</label>
+                    <input type="datetime-local" name="datetimelocal" id="datetimelocal"><br><br>
+
+                    <label for="time">Current time:</label>
+                    <input type="time" name="time" id="time"><br><br>
+
+                    <label for="month">Current time:</label>
+                    <input type="month" name="month" id="month">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Input type file:</legend>
+                    <label for="fileupload">Upload File:</label>
+                    <input type="file" name="fileupload" id="fileupload"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Range selection:</legend>
+                    <!-- input type range -->
+                    <label for="range">Select range:</label>
+                    <input type="range" name="range" id="range"><br><br>
+
+                    <!-- input type radio  -->
+                    <label for="radio">Click Radio</label>
+                    <input type="radio" name="radio" id="radio"><br><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message:</legend>
+                    <!-- input type textarea  -->
+                    <!-- <label for="message">Enter your message:</label> -->
+                    <textarea name="message" id="message" cols="70" rows="10"></textarea><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Image:</legend>
+                    <!-- input type image  -->
+                    <label for="image">Your Image:</label>
+                    <img src="./shield logo.jpg" alt="shield logo" width="300px" height="auto"><br><br>
+                    <!-- input type url  -->
+                    <label for="myUrl">Select url</label>
+                    <input type="url" name="myUrl" id="myUrl"><br><br>
+                </fieldset>
+
+                <!-- input type checkbox  -->
+                <fieldset>
+                    <legend>Select your gender</legend>
+                    <label for="mgender">Male</label>
+                    <input type="checkbox" name="mgender" id="mgender">
+                    <label for="fgender">FeMale</label>
+                    <input type="checkbox" name="fgender" id="fgender">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Select Your Hobbies</legend>
+                    <label><input type="checkbox" name="hobbies" value="Reading"> Reading</label><br>
+                    <label><input type="checkbox" name="hobbies" value="Sports"> Sports</label><br>
+                    <label><input type="checkbox" name="hobbies" value="Music"> Music</label><br>
+                    <label><input type="checkbox" name="hobbies" value="Traveling"> Traveling</label><br>
+                </fieldset>
+
+                <!-- single select checkbox  -->
+                <fieldset>
+                    <legend>Select Your Preferred Mode of Transportation</legend>
+                    <label><input type="checkbox" name="transport" value="Car" onclick="singleSelect(this)">
+                        Car</label><br>
+                    <label><input type="checkbox" name="transport" value="Bike" onclick="singleSelect(this)">
+                        Bike</label><br>
+                    <label><input type="checkbox" name="transport" value="Bus" onclick="singleSelect(this)">
+                        Bus</label><br>
+                    <label><input type="checkbox" name="transport" value="Train" onclick="singleSelect(this)">
+                        Train</label><br>
+                </fieldset>
+
+                <input type="submit" value="Submit"><br><br>
+
+                <fieldset>
+                    <legend>Dropdown list:</legend>
+
+                    <!-- list use  -->
+                    <label for="brow">Data list:</label>
+                    <input type="text" list="browsers" name="brow">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                    </datalist> <br><br>
+
+                    <label for="cars">Choose a car:</label>
+                    <select id="cars" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="mercedes">Mercedes</option>
+                    </select>
+
+                </fieldset>
+
+
+
+                <!-- input type button  -->
+                <input type="button" value="submit Input">
+                <button type="submit">Submit</button>
+                <button disabled="disabled">Disabled</button>
+                <button type="reset">reset</button>
+                <button type="hidden">Hide</button>
+
+            </fieldset>
+
+            <br><br>
+            <hr>
+            <br><br>
+
+            <fieldset>
+                <legend>Extra details:</legend>
+                <p>Here is the updated table with code examples for each attribute:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Attribute</strong></th>
+                            <th><strong>Description</strong></th>
+                            <th><strong>Code Example</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>type</code></td>
+                            <td>Specifies the type of input control (e.g., text, password, checkbox, radio, submit,
+                                etc.).</td>
+                            <td><code>&lt;input type=&quot;text&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>name</code></td>
+                            <td>Specifies the name of the input field (used in form submissions).</td>
+                            <td><code>&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>value</code></td>
+                            <td>Specifies the initial value of the input field.</td>
+                            <td><code>&lt;input type=&quot;text&quot; value=&quot;Default Value&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>id</code></td>
+                            <td>Specifies a unique ID for the input element.</td>
+                            <td><code>&lt;input type=&quot;text&quot; id=&quot;user-input&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>placeholder</code></td>
+                            <td>Provides a hint to the user about what the input field expects.</td>
+                            <td><code>&lt;input type=&quot;text&quot; placeholder=&quot;Enter your name&quot;&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>required</code></td>
+                            <td>Makes the input field mandatory for form submission.</td>
+                            <td><code>&lt;input type=&quot;text&quot; required&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>disabled</code></td>
+                            <td>Disables the input field, preventing user input.</td>
+                            <td><code>&lt;input type=&quot;text&quot; disabled&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>readonly</code></td>
+                            <td>Makes the input field read-only, so users can view but not modify it.</td>
+                            <td><code>&lt;input type=&quot;text&quot; readonly&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>checked</code></td>
+                            <td>Pre-selects a radio button or checkbox when the page loads.</td>
+                            <td><code>&lt;input type=&quot;checkbox&quot; checked&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>maxlength</code></td>
+                            <td>Specifies the maximum number of characters allowed.</td>
+                            <td><code>&lt;input type=&quot;text&quot; maxlength=&quot;10&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>min</code> and <code>max</code></td>
+                            <td>Specifies the minimum and maximum values (for number, range, date, etc.).</td>
+                            <td><code>&lt;input type=&quot;number&quot; min=&quot;1&quot; max=&quot;10&quot;&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>step</code></td>
+                            <td>Defines the legal number intervals for number, range, date inputs.</td>
+                            <td><code>&lt;input type=&quot;number&quot; step=&quot;2&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>pattern</code></td>
+                            <td>Specifies a regular expression for input validation.</td>
+                            <td><code>&lt;input type=&quot;text&quot; pattern=&quot;[A-Za-z]{3,}&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>autocomplete</code></td>
+                            <td>Enables or disables autocomplete for the input field.</td>
+                            <td><code>&lt;input type=&quot;text&quot; autocomplete=&quot;on&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>autofocus</code></td>
+                            <td>Automatically focuses the input field when the page loads.</td>
+                            <td><code>&lt;input type=&quot;text&quot; autofocus&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>multiple</code></td>
+                            <td>Allows multiple values (used with file and email input types).</td>
+                            <td><code>&lt;input type=&quot;file&quot; multiple&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>accept</code></td>
+                            <td>Specifies the file types accepted (used with file inputs).</td>
+                            <td><code>&lt;input type=&quot;file&quot; accept=&quot;image/*&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>size</code></td>
+                            <td>Defines the visible width of the input field (in characters).</td>
+                            <td><code>&lt;input type=&quot;text&quot; size=&quot;30&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>minlength</code></td>
+                            <td>Specifies the minimum number of characters required.</td>
+                            <td><code>&lt;input type=&quot;text&quot; minlength=&quot;5&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>list</code></td>
+                            <td>Connects the input with a <code>&lt;datalist&gt;</code> element for predefined options.
+                            </td>
+                            <td><code>&lt;input type=&quot;text&quot; list=&quot;browsers&quot;&gt;&lt;datalist id=&quot;browsers&quot;&gt;&lt;option&gt;Chrome&lt;/option&gt;&lt;/datalist&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>form</code></td>
+                            <td>Associates the input element with a form (useful if the input is outside the form).</td>
+                            <td><code>&lt;input type=&quot;text&quot; form=&quot;myForm&quot;&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>formaction</code></td>
+                            <td>Specifies the URL to which the form data will be submitted (for submit and image input
+                                types).</td>
+                            <td><code>&lt;input type=&quot;submit&quot; formaction=&quot;/submit&quot;&gt;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>This table now includes code examples for each attribute.</p>
+
+
+            </fieldset>
+        </form>
+    </div>
+
+    <script>
+        function singleSelect(checkbox) {
+            var checkboxes = document.getElementsByName('transport');
+            checkboxes.forEach((item) => {
+                if (item !== checkbox) item.checked = false;
+            });
+        }
+    </script>
+</body>
+
+</html>
